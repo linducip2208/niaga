@@ -2028,6 +2028,23 @@ return [
             ],
         ],
     ], [
+        'key'  => 'sales.payment_methods.midtrans',
+        'name' => 'admin::app.configuration.index.sales.payment-methods.midtrans',
+        'info' => 'admin::app.configuration.index.sales.payment-methods.midtrans-info',
+        'sort' => 10,
+        'fields' => [
+            ['name' => 'active',      'title' => 'admin::app.configuration.index.sales.payment-methods.status', 'type' => 'boolean', 'channel_based' => true],
+            ['name' => 'title',       'title' => 'admin::app.configuration.index.sales.payment-methods.title', 'type' => 'text', 'depends' => 'active:1', 'validation' => 'required_if:active,1', 'channel_based' => true, 'locale_based' => true],
+            ['name' => 'description', 'title' => 'admin::app.configuration.index.sales.payment-methods.description', 'type' => 'textarea', 'depends' => 'active:1', 'channel_based' => true, 'locale_based' => true],
+            ['name' => 'image',       'title' => 'admin::app.configuration.index.sales.payment-methods.logo', 'type' => 'image', 'info' => 'admin::app.configuration.index.sales.payment-methods.logo-information', 'depends' => 'active:1', 'channel_based' => true, 'validation' => 'mimes:bmp,jpeg,jpg,png,webp'],
+            ['name' => 'sandbox',     'title' => 'admin::app.configuration.index.sales.payment-methods.sandbox', 'type' => 'boolean', 'depends' => 'active:1', 'channel_based' => true],
+            ['name' => 'merchant_id', 'title' => 'admin::app.configuration.index.sales.payment-methods.midtrans-merchant-id', 'type' => 'text', 'depends' => 'active:1', 'channel_based' => true],
+            ['name' => 'client_key',  'title' => 'admin::app.configuration.index.sales.payment-methods.midtrans-client-key', 'type' => 'password', 'depends' => 'active:1', 'channel_based' => true],
+            ['name' => 'server_key',  'title' => 'admin::app.configuration.index.sales.payment-methods.midtrans-server-key', 'type' => 'password', 'depends' => 'active:1', 'channel_based' => true],
+            ['name' => 'enabled_channels', 'title' => 'admin::app.configuration.index.sales.payment-methods.midtrans-channels', 'type' => 'text', 'depends' => 'active:1', 'channel_based' => true, 'info' => 'Bisa multiple: bca_va,bni_va,bri_va,gopay,shopeepay,qris'],
+            ['name' => 'sort',        'title' => 'admin::app.configuration.index.sales.payment-methods.sort-order', 'type' => 'number', 'depends' => 'active:1', 'validation' => 'required_if:active,1|integer|min:1', 'channel_based' => true],
+        ],
+    ], [
         'key' => 'sales.payment_methods.razorpay',
         'name' => 'admin::app.configuration.index.sales.payment-methods.razorpay',
         'info' => 'admin::app.configuration.index.sales.payment-methods.razorpay-info',

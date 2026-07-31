@@ -92,6 +92,7 @@
             "Webkul\\Omnibus\\": "packages/Webkul/Omnibus/src",
             "Webkul\\PayU\\": "packages/Webkul/PayU/src",
             "Webkul\\Payment\\": "packages/Webkul/Payment/src",
+            "Webkul\\PaymentId\\": "packages/Webkul/PaymentId/src",
             "Webkul\\Paypal\\": "packages/Webkul/Paypal/src",
             "Webkul\\PhonePe\\": "packages/Webkul/PhonePe/src",
             "Webkul\\Product\\": "packages/Webkul/Product/src",

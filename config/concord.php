@@ -37,6 +37,7 @@ return [
         Webkul\Omnibus\Providers\ModuleServiceProvider::class,
         Webkul\PayU\Providers\ModuleServiceProvider::class,
         Webkul\Payment\Providers\ModuleServiceProvider::class,
+        Webkul\PaymentId\Providers\ModuleServiceProvider::class,
         Webkul\Paypal\Providers\ModuleServiceProvider::class,
         Webkul\Product\Providers\ModuleServiceProvider::class,
         Webkul\RMA\Providers\ModuleServiceProvider::class,

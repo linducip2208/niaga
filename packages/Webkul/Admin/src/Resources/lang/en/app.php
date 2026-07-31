@@ -4968,6 +4968,14 @@ return [
                     'status' => 'Status',
                     'stripe' => 'Stripe',
                     'stripe-info' => 'Configure Stripe payment gateway settings for secure online transactions',
+
+                    /* Midtrans */
+                    'midtrans'               => 'Midtrans',
+                    'midtrans-info'          => 'Configure Midtrans payment gateway for Indonesian payment methods',
+                    'midtrans-merchant-id'   => 'Merchant ID',
+                    'midtrans-client-key'    => 'Client Key',
+                    'midtrans-server-key'    => 'Server Key',
+                    'midtrans-channels'      => 'Enabled Channels',
                     'test-client-id' => 'Test Mode Client ID',
                     'test-client-secret' => 'Test Mode Client Secret',
                     'test-mode-info' => 'For test/sandbox mode only.',

@@ -26,6 +26,7 @@ use Webkul\Marketing\Providers\MarketingServiceProvider;
 use Webkul\Notification\Providers\NotificationServiceProvider;
 use Webkul\Omnibus\Providers\OmnibusServiceProvider;
 use Webkul\Payment\Providers\PaymentServiceProvider;
+use Webkul\PaymentId\Providers\PaymentIdServiceProvider;
 use Webkul\Paypal\Providers\PaypalServiceProvider;
 use Webkul\PayU\Providers\PayUServiceProvider;
 use Webkul\PhonePe\Providers\PhonePeServiceProvider;
@@ -80,6 +81,7 @@ return [
     PayUServiceProvider::class,
     PaymentServiceProvider::class,
     PaypalServiceProvider::class,
+    PaymentIdServiceProvider::class,
     PhonePeServiceProvider::class,
     ProductServiceProvider::class,
     RMAServiceProvider::class,
